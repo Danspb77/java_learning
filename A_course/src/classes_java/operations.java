@@ -2,12 +2,20 @@ package classes_java;
 
 public class operations {
     public static void main(String[] args) {
-        client Danya = new client();
+        client Danya = new client(1,"Danya",100000);
 
-        Danya.id =1;
-        Danya.name = "Danya";
-        Danya.balance= 132374239;
+        Danya.setId(1);
+        Danya.setName("Danya");
+        Danya.setBalance(100000);
 
-        System.out.println(Danya.id + " " + Danya.name + " " + Danya.balance);
+
+        Danya.getAllData();
+
+
+        client mobClient= new client(2,"Mob",200);  // only with NEW you can create a new object of class
+
+        
+
+        mobClient.getAllData();
     }
 }
