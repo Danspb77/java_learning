@@ -14,6 +14,7 @@ public class operations {
 
         client mobClient= new client(2,"Mob",200);  // only with NEW you can create a new object of class
 
+        client noParametres =new client();
         
 
         mobClient.getAllData();

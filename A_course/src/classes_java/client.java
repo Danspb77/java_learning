@@ -7,11 +7,12 @@ public class client {
     private String name;
     private double balance;
 
+    client(){}
     // it's constructor - it will be executed in creation moment
-    client(int defid, String defname, double defbalance){
-        id=defid;
-        name=defname;
-        balance=defbalance;
+    client(int id, String name, double balance){
+        this.id=id;
+        this.name=name;
+        this.balance=balance;
     }
     void getAllData(){
         System.out.println(id + " " + name + " " + balance);
