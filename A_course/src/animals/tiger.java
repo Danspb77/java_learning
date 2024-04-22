@@ -10,7 +10,7 @@ public class tiger extends animal {
     
 
     void roar(){
-        System.out.println("roaraaaaa"+ "on" + getLegs() + "legs");
+        System.out.println("roaraaaaa "+ " on " + getLegs() + "legs");
     }
 
     public String getVolume(){
