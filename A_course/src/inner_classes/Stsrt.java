@@ -1,4 +1,5 @@
 package inner_classes;
+import classes_java.client;
 
 public class Stsrt {
     public static void main(String[] args) {
