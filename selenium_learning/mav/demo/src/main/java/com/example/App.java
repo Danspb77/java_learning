@@ -1,8 +1,12 @@
 package com.example;
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Hello world!
@@ -53,6 +57,12 @@ public class App
         //"ul li:first-child"
         // "ul li:nth-child(2)"
 
+        // waits
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        WebElement social_link=(new WebDriverWait(driver,Duration.ofSeconds(10)).
+                until(ExpectedConditions.presenceOfElementLocated(By.xpath("a[href='https://www.telegram.com/']"))));
         
 
 
