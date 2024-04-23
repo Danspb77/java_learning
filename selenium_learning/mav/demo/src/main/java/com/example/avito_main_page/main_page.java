@@ -16,7 +16,7 @@ public class main_page {
         WebDriver driver= new ChromeDriver();
         driver.get("https://www.avito.ru/sankt-peterburg/avtomobili/audi/a6-ASgBAgICAkTgtg3elyjitg3onSg?cd=1&radius=0&searchRadius=0");
         
-        WebElement c4_folder = driver.findElement(By.xpath("//a[text()='C4 (1994—1997)']"));
+        // WebElement c4_folder = driver.findElement(By.xpath("//a[text()='C4 (1994—1997)']"));
     
         String category_id= c4_folder.getAttribute("data-category-id");
         System.out.println(category_id);
@@ -24,6 +24,20 @@ public class main_page {
         WebElement car_count=driver.findElement(By.cssSelector(".page-title-count-wQ7pG"));
         String amount=car_count.getText();
         System.out.println(amount);
-    }   
+
+        WebElement countButton= driver.findElement(By.xpath("//div[@class='styles-button-GkPLM'] "));
+
+        System.out.println((countButton.getCssValue("border-radius")));
+        
+        WebElement countButton1=driver.findElement(By.xpath("//span[text()='Рассчитать']"));
+        countButton1.click();
+
+        System.out.println("clicked");
+        WebElement searchInput= driver.findElement(By.xpath("//input[@data-marker='search-form/suggest']"));
+        searchInput.click();
+        System.out.println("clicked");
+   
+    }
+
     
 }
