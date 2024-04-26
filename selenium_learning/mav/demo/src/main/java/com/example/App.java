@@ -25,7 +25,7 @@ public class App
 
         // Xpath
         // "//div[@class='name of class']"
-        // "// in the beginning of the path means only single element"
+        // "//" in the beginning of the path means only single element
         // "//a[@class='g'][last()]"
         // "a[text()="search in google"]"
         // "*[text()="search in google"]"
